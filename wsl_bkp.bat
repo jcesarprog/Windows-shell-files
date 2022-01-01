@@ -13,6 +13,6 @@ ECHO WSL Ubuntu backup DONE!!.
 
 IF "%turnOff%"=="-d" (
 	ECHO "Shutting down"
-	Stop-Computer
+	timeout /t 3 
+	shutdown /s
 )
-PAUSE
